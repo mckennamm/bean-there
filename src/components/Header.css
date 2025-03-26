@@ -1,0 +1,46 @@
+.header-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    width: 100%;
+    background-color:#f0ecec;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Space between logo and links */
+    align-items: center; /* Center vertically */
+    width: 100%;
+    padding: 0 20px; /* Optional: adds some padding */
+}
+
+.header-links {
+    display: flex; /* Makes the links sit horizontally */
+    list-style: none; /* Removes bullet points */
+    padding: 0;
+    margin: 0;
+    gap: 20px; /* Optional: adds space between the links */
+}
+
+.header-links li {
+    margin: 0 10px; /* Optional: adds space around each link */
+    padding: 10px; /* Optional: adds space inside each link */
+    background-color: #fff; /* Optional: adds a background color */
+    border-radius: 5px; /* Optional: rounds the corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow */
+    transition: background-color 0.3s; /* Optional: adds a transition effect */
+}
+
+.header-links li:hover {
+    background-color: #e0e0e0; /* Changes background color on hover */
+}
+
+.header-links a {
+    text-decoration: none; /* Removes underline from links */
+    color: #000; /* Sets text color */
+    font-size: 1rem; /* Sets font size */
+    font-weight: bold; /* Makes the text bold */
+}
