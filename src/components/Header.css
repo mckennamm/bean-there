@@ -1,46 +1,136 @@
+/* Header Section */
 .header-section {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    height: 20vh;
-    width: 100%;
-    background-color:#f0ecec;
+    width: 80%;
+    /* background-color: #ffffff71; */
+    height: 400px; /* Adjusted height for better spacing */
+
 }
 
+.header-nav {
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 10px; /* Optional: adds some padding */
+    /* background-color: #eeddd4; */
+}
 
+.header-logo {
+    width: 100px; /* Adjusted width for better spacing */
+    height: 100px; /* Adjusted height for better spacing */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Nav Bar */
 nav {
     display: flex;
-    justify-content: space-between; /* Space between logo and links */
-    align-items: center; /* Center vertically */
+    justify-content: center; /* Space between logo and links */
     width: 100%;
-    padding: 0 20px; /* Optional: adds some padding */
+    padding: 0 10px; /* Optional: adds some padding */
+    /* background-color: #eeddd4; */
 }
 
-.header-links {
+/* Header Links Container */
+.header-links{
     display: flex; /* Makes the links sit horizontally */
-    list-style: none; /* Removes bullet points */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     padding: 0;
     margin: 0;
-    gap: 20px; /* Optional: adds space between the links */
 }
 
+/* List Item Styles */
 .header-links li {
-    margin: 0 10px; /* Optional: adds space around each link */
-    padding: 10px; /* Optional: adds space inside each link */
-    background-color: #fff; /* Optional: adds a background color */
-    border-radius: 5px; /* Optional: rounds the corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow */
-    transition: background-color 0.3s; /* Optional: adds a transition effect */
+    list-style: none;
+    margin: 0 20px; /* Adjusted spacing for consistency */
+    padding: 10px;
+    transition: 0.5s; /* Smooth transition for hover effects */
 }
 
-.header-links li:hover {
-    background-color: #e0e0e0; /* Changes background color on hover */
-}
-
+/* Link Styles */
 .header-links a {
-    text-decoration: none; /* Removes underline from links */
-    color: #000; /* Sets text color */
-    font-size: 1rem; /* Sets font size */
-    font-weight: bold; /* Makes the text bold */
+    display: block;
+    position: relative;
+    font-weight: 800;
+    font-family: 'Spectral', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.2s; /* Smooth hover animation */
+}
+
+/* Hover Effect - Scale and Blur on Parent UL Hover */
+.header-links:hover li a {
+    transform: scale(1.2);
+    /* opacity: 0.2; */
+    /* filter: blur(1px); */
+}
+
+/* Hover Effect - Individual Link */
+.header-links li a:hover {
+    transform: scale(1);
+    /* opacity: 1; */
+    /* filter: blur(0); */
+    color: #55331e;
+}
+
+/* Background Hover Effect */
+.header-links li a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background: #ffffff86; /* Background color for hover */
+    transition: 0.2s;
+    transform-origin: top;
+    transform: scaleY(0);
+    z-index: -1;
+}
+
+/* Activate Background on Hover */
+.header-links li a:hover:before {
+    transition: transform 0.1s;
+    transform-origin: top;
+    transform: scaleX(1);
+}
+
+.header-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 10px; /* Optional: adds some padding */
+}
+
+.header-search input {
+    width: 100px; /* Adjusted width for better spacing */
+    height: 40px; /* Adjusted height for better spacing */
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+
+}
+
+.header-search button {
+    background-color: #a8653a; /* Button color */
+    color: #fff; /* Text color */
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
 }

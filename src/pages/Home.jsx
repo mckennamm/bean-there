@@ -6,17 +6,20 @@ import "./Home.css"; // Assuming you have some styles for the home page
 
 const Home = () => {
   const coffeeShops = [
-    { id: 1, name: "Cozy Brew", rating: 5 },
-    { id: 2, name: "Morning Grind", rating: 4 },
+    { id: 1, name: "The Optimist", rating: 5 },
+    { id: 2, name: "Lucky Tree", rating: 4 },
   ];
 
   return (
     <div className="home-container">
         <Header />
+    <div className="hero-container">
       <Hero />
+    </div>
+
       <ul>
         {coffeeShops.map(shop => (
-          <li key={shop.id}>
+          <li className="shop" key={shop.id}>
             <Link to={`/review/${shop.id}`}>
               {shop.name} - {shop.rating}⭐
             </Link>

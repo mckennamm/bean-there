@@ -1,0 +1,115 @@
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensures modal is on top */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fff;
+    width: 500px;
+    max-width: 90%;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+    animation: fadeIn 0.3s ease-out; /* Smooth fade-in effect */
+}
+
+/* Modal Close Button */
+.modal-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.modal-close:hover {
+    transform: scale(1.2);
+}
+
+/* Modal Header Styles */
+.modal-content h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    color: #6c4125;
+}
+
+/* Modal Body Styles */
+.modal-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Button to Open Modal */
+button {
+    padding: 10px 20px;
+    background-color: #6c4125;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #a8653a;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Search Input */
+.search-input {
+    width: 80%;
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  /* Search Results List */
+  .search-results {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  .search-results li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .search-results li:last-child {
+    border-bottom: none;
+  }
+  

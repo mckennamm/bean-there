@@ -1,5 +1,13 @@
-#root {
+@font-face {
+  font-family: 'Bernier Shade';
+  src: url('./assets/fonts/berniershade_regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
+
+
+#root {
   margin: 0;
 
 }
