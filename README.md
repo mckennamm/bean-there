@@ -30,7 +30,7 @@ This project is built with:
 ---
 
 ## 📸 Preview
-![BrewViews Screenshot]
+![Bean There Screenshot]
 <img width="1575" alt="Screenshot 2025-03-28 at 10 31 28 AM" src="https://github.com/user-attachments/assets/d4558162-d572-4256-9ddf-60264fe27051" />
 
 
@@ -63,7 +63,7 @@ While this is a passion project for the two of us, feel free to share ideas or r
 🧡 **Acknowledgements**
 Special thanks to all the amazing local coffee shops in Raleigh that inspire our journey. We’re grateful for the sips and good vibes!
 
-📫** Contact**
+📫 **Contact**
 Want to recommend a new coffee shop for us to try? Drop us a message:
 
 Molly McKenna – (https://www.studiomolly.co/)🌱
