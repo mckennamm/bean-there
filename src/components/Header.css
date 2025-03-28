@@ -3,22 +3,22 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 80%;
-    /* background-color: #ffffff71; */
-    height: 400px; /* Adjusted height for better spacing */
-
+    justify-content: center;
+    width: 100%;
+    height: 20vh; /* Adjusted height for better spacing */
 }
 
+/* Header Nav Container */
 .header-nav {
     display: flex;
     height: 200px;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 80%;
     padding: 0 10px; /* Optional: adds some padding */
-    /* background-color: #eeddd4; */
 }
 
+/* Header Logo */
 .header-logo {
     width: 100px; /* Adjusted width for better spacing */
     height: 100px; /* Adjusted height for better spacing */
@@ -33,11 +33,10 @@ nav {
     justify-content: center; /* Space between logo and links */
     width: 100%;
     padding: 0 10px; /* Optional: adds some padding */
-    /* background-color: #eeddd4; */
 }
 
 /* Header Links Container */
-.header-links{
+.header-links {
     display: flex; /* Makes the links sit horizontally */
     flex-direction: row;
     justify-content: center;
@@ -50,9 +49,9 @@ nav {
 /* List Item Styles */
 .header-links li {
     list-style: none;
-    margin: 0 20px; /* Adjusted spacing for consistency */
-    padding: 10px;
-    transition: 0.5s; /* Smooth transition for hover effects */
+    margin: 0 15px; /* Slightly reduced spacing */
+    padding: 5px 10px; /* Consistent padding */
+    transition: 0.3s;
 }
 
 /* Link Styles */
@@ -63,24 +62,17 @@ nav {
     font-family: 'Spectral', sans-serif;
     text-transform: uppercase;
     font-size: 1.5rem;
-    color: #fff;
-    text-decoration: none;
-    transition: 0.2s; /* Smooth hover animation */
-}
-
-/* Hover Effect - Scale and Blur on Parent UL Hover */
-.header-links:hover li a {
-    transform: scale(1.2);
-    /* opacity: 0.2; */
-    /* filter: blur(1px); */
-}
-
-/* Hover Effect - Individual Link */
-.header-links li a:hover {
-    transform: scale(1);
-    /* opacity: 1; */
-    /* filter: blur(0); */
     color: #55331e;
+    text-decoration: none;
+    transition: 0.2s ease-in-out; /* Smooth hover animation */
+}
+
+/* Individual Link Hover Effect */
+.header-links li a:hover {
+    padding: 5px 10px; /* Consistent padding */
+    transform: scale(1.1); /* Slight scale on hover */
+    color: #55331e; /* Color change on hover */
+    transition: 0.2s ease-in-out;
 }
 
 /* Background Hover Effect */
@@ -89,23 +81,23 @@ nav {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 20px;
+    width: 100%; /* Full width of link */
+    height: 100%; /* Full height of link */
     background: #ffffff86; /* Background color for hover */
-    transition: 0.2s;
+    transition: 0.2s ease-in-out;
     transform-origin: top;
-    transform: scaleY(0);
+    transform: scaleY(0); /* Starts hidden */
     z-index: -1;
 }
 
 /* Activate Background on Hover */
 .header-links li a:hover:before {
-    transition: transform 0.1s;
+    transition: transform 0.1s ease-in-out;
     transform-origin: top;
-    transform: scaleX(1);
+    transform: scaleY(1); /* Scale vertically on hover */
 }
 
+/* Search Bar Container */
 .header-search {
     display: flex;
     justify-content: center;
@@ -114,6 +106,7 @@ nav {
     padding: 0 10px; /* Optional: adds some padding */
 }
 
+/* Search Input */
 .header-search input {
     width: 100px; /* Adjusted width for better spacing */
     height: 40px; /* Adjusted height for better spacing */
@@ -121,9 +114,9 @@ nav {
     border-radius: 5px;
     border: 1px solid #ccc;
     font-size: 1rem;
-
 }
 
+/* Search Button */
 .header-search button {
     background-color: #a8653a; /* Button color */
     color: #fff; /* Text color */
@@ -132,5 +125,10 @@ nav {
     border-radius: 5px;
     cursor: pointer;
     font-size: 1rem;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Button Hover Effect */
+.header-search button:hover {
+    background-color: #864e2a; /* Darker shade on hover */
 }
